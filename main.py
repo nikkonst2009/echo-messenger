@@ -76,7 +76,6 @@ class SocketApp(App):
         self.s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.running = True
         self.connected = False
-        self.messages_list = ""
         return TabbedPanel()
 
     def connect_to_server(self, ip, port):
